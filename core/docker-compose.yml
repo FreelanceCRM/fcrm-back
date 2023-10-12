@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  core-db:
+    container_name: core_db
+    image: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: fcrm_core
+      POSTGRES_USER: fcrm_root
+      POSTGRES_PASSWORD: fcrm_root
